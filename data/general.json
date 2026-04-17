@@ -1,0 +1,800 @@
+{
+    "general_data": {
+        "description": "1L FLiBe, second cold irradiation",
+        "run_nb": 2,
+        "salt": "FLiBe",
+        "stock": "Alphatec reactor grade",
+        "salt_mass": {
+            "value": 1.95,
+            "unit": "kg"
+        },
+        "temperature": {
+            "dip_setpoints": [
+                {
+                    "value": 22,
+                    "unit": "C",
+                    "set_time": "3/10/2026 11:20"
+                },
+                {
+                    "value": 150,
+                    "unit": "C",
+                    "set_time": "3/13/2026 11:25"
+                },
+                {
+                    "value": 300,
+                    "unit": "C",
+                    "set_time": "3/16/2026 12:14"
+                },
+                {
+                    "value": 450,
+                    "unit": "C",
+                    "set_time": "3/19/2026 10:32"
+                },
+                {
+                    "value": 750,
+                    "unit": "C",
+                    "set_time": "3/27/2026 12:10"
+                },
+                {
+                    "value": 22,
+                    "unit": "C",
+                    "set_time": "4/3/2026 20:30"
+                },
+                {
+                    "value": 750,
+                    "unit": "C",
+                    "set_time": "4/4/2026 01:45"
+                }
+            ],
+            "logs": {
+                "filename": "FLiBe_1L_run_2_temp.csv",
+                "TC1_label": "DIP TC",
+                "TC2_label": "SIDE TC",
+                "TC3_label": "OV SIDE",
+                "TC4_label": "FURNACE"
+            }
+        },
+        "purpose_of_run": "Replication of Run 1."
+    },
+    "cover_gas": {
+        "type": "He",
+        "pressure_gas_system": {
+            "value": 10,
+            "unit": "PSIG"
+        },
+        "pressure_gas_crucible": {
+            "value": 6,
+            "unit": "PSIG",
+            "note": "in steady state, upstream from crucible"
+        },
+        "flow_rate_sample": [
+            {
+                "value": 0,
+                "unit": "SCCM",
+                "set_time": "3/10/2026 11:20"
+            },
+            {
+                "value": 35,
+                "unit": "SCCM",
+                "set_time": "3/10/2026 19:00"
+            },
+            {
+                "value": 30,
+                "unit": "SCCM",
+                "set_time": "3/27/2026 12:10"
+            },
+            {
+                "value": 0,
+                "unit": "SCCM",
+                "set_time": "4/3/2026 20:30"
+            },
+            {
+                "value": 30,
+                "unit": "SCCM",
+                "set_time": "4/4/2026 02:45"
+            },
+            {
+                "value": 0,
+                "unit": "SCCM",
+                "set_time": "4/13/2026 16:10"
+            },
+            {
+                "value": 30,
+                "unit": "SCCM",
+                "set_time": "4/15/2026 13:55"
+            }
+        ],
+        "flow_rate_air": {
+            "value": 10,
+            "unit": "SCCM"
+        },
+        "switched_to": [
+            {
+                "type": "He + 3.65% H2",
+                "gas_switch_time": "4/13/2026 16:10",
+                "notes": "Interrupted flow of He through IV, added H2 downstream from IV filters at 50 SCCM"
+            },
+            {
+                "type": "He",
+                "gas_switch_time": "4/15/2026 13:55",
+                "notes": "Resumed pure He flow through IV after emptying and purging the H2 manifold and line"
+            }
+        ]
+    },
+    "secondary_gas": {
+        "type": "He",
+        "pressure_gas_system": {
+            "value": 10,
+            "unit": "PSIG"
+        },
+        "pressure_gas_crucible": {
+            "value": 5,
+            "unit": "PSIG",
+            "note": "in steady state, at crucible"
+        },
+        "flow_rate_sample": [
+            {
+                "value": 0,
+                "unit": "SCCM",
+                "set_time": "3/10/2026 11:20"
+            },
+            {
+                "value": 250,
+                "unit": "SCCM",
+                "set_time": "3/10/2026 19:00"
+            },
+            {
+                "value": 50,
+                "unit": "SCCM",
+                "set_time": "3/23/2026 14:48"
+            },
+            {
+                "value": 250,
+                "unit": "SCCM",
+                "set_time": "4/1/2026 14:35"
+            },
+            {
+                "value": 0,
+                "unit": "SCCM",
+                "set_time": "4/3/2026 20:30"
+            },
+            {
+                "value": 250,
+                "unit": "SCCM",
+                "set_time": "4/4/2026 02:45"
+            },
+            {
+                "value": 50,
+                "unit": "SCCM",
+                "set_time": "4/6/2026 14:25"
+            },
+            {
+                "value": 250,
+                "unit": "SCCM",
+                "set_time": "4/15/2026 13:55"
+            }
+        ],
+        "flow_rate_air": {
+            "value": 10,
+            "unit": "SCCM"
+        },
+        "switched_to": [
+            {
+                "type": "He + H2O",
+                "gas_switch_time": "3/1/2026 19:00",
+                "notes": "Added humidifyer upstream from vessel, assume gas saturated with moisture"
+            },
+            {
+                "type": "He",
+                "gas_switch_time": "3/19/2026 10:32",
+                "notes": "Humidifyer removed"
+            },
+            {
+                "type": "He + H2O",
+                "gas_switch_time": "4/9/2026 13:10",
+                "notes": "Added humidifyer upstream from vessel, assume gas saturated with moisture"
+            }
+        ]
+    },
+    "generators": [
+        {
+            "name": "nGen",
+            "enabled": true,
+            "beam_current": {
+                "value": 100,
+                "unit": "uA"
+            },
+            "beam_voltage": {
+                "value": 110,
+                "unit": "kV"
+            },
+            "periods": [
+                {
+                    "start": "3/10/2026 11:20",
+                    "end": "3/10/2026 13:50"
+                }
+            ]
+        }
+    ],
+    "notes": "nGen positioned under the work surface. Gap between bottom surface of epoxy and the generator under ?? inch.",
+    "neutron_detection": {
+        "foils": {
+            "enabled": true,
+            "position": "on generator, at target plane, facing top and bottom",
+            "materials": [
+                {
+                    "position": null,
+                    "material": "Nb",
+                    "designator": null,
+                    "irradiation_date": "11/19/2025",
+                    "number_of_foils": null,
+                    "distance_to_source": {
+                        "value": null,
+                        "unit": "cm",
+                        "note": null
+                    },
+                    "mass": {
+                        "value": null,
+                        "unit": "g"
+                    },
+                    "mass_err": {
+                        "value": null,
+                        "unit": "g"
+                    },
+                    "thickness": {
+                        "value": null,
+                        "unit": "inch"
+                    }
+                },
+                {
+                    "position": null,
+                    "material": "Zr",
+                    "designator": null,
+                    "irradiation_date": "11/19/2025",
+                    "number_of_foils": null,
+                    "distance_to_source": {
+                        "value": null,
+                        "unit": "cm"
+                    },
+                    "mass": {
+                        "value": null,
+                        "unit": "g"
+                    },
+                    "mass_err": {
+                        "value": null,
+                        "unit": "g"
+                    },
+                    "thickness": {
+                        "value": null,
+                        "unit": "inch"
+                    }
+                }
+            ]
+        },
+        "diamond": {
+            "enabled": false,
+            "note": null,
+            "position": null
+        },
+        "proton_recoil_telecsope": {
+            "enabled": true,
+            "note": "ROSY failed ~8h into the run.",
+            "position": null
+        }
+    },
+    "timestamps": {
+        "run_start": "3/10/2026 11:20"
+    },
+    "tritium_blank_set": {
+        "filename": "1L-FLB_BLANKS_500MIN_RE.csv",
+        "parameter": "tSIE",
+        "blanks": {
+            "FLB_BL-2": {
+                "water_volume": {
+                    "value": 2,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            },
+            "FLB_BL-4": {
+                "water_volume": {
+                    "value": 4,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            },
+            "FLB_BL-6": {
+                "water_volume": {
+                    "value": 6,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            },
+            "FLB_BL-8": {
+                "water_volume": {
+                    "value": 8,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            },
+            "FLB_BL-9": {
+                "water_volume": {
+                    "value": 9,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            },
+            "FLB_BL-10": {
+                "water_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            },
+            "FLB_BL-11": {
+                "water_volume": {
+                    "value": 11,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            },
+            "FLB_BL-12": {
+                "water_volume": {
+                    "value": 12,
+                    "unit": "ml"
+                },
+                "scint_volume": {
+                    "value": 10,
+                    "unit": "ml"
+                }
+            }
+        }
+    },
+    "tritium_detection": {
+        "IV": {
+            "0": {
+                "planned_sample_time": "3/10/2026 11:20",
+                "actual_sample_time": "3/10/2026 10:40",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-0_2-1.csv",
+                    "4": "RE_1L-FLB_IV_2-0_2-1.csv"
+                }
+            },
+            "1": {
+                "planned_sample_time": "3/11/2026 11:20",
+                "actual_sample_time": "3/11/2026 18:15",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-0_2-1.csv",
+                    "4": "RE_1L-FLB_IV_2-0_2-1.csv"
+                }
+            },
+            "2": {
+                "planned_sample_time": "3/12/2026 11:20",
+                "actual_sample_time": "3/12/2026 17:15",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_OV_2-0_2-1_IV_2-2.csv",
+                    "4": "RE_1L-FLB_OV_2-0_2-1_IV_2-2.csv"
+                }
+            },
+            "3": {
+                "planned_sample_time": "3/13/2026 11:20",
+                "actual_sample_time": "3/13/2026 11:25",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv",
+                    "2": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv",
+                    "3": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv",
+                    "4": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv"
+                }
+            },
+            "4": {
+                "planned_sample_time": "3/14/2026 11:20",
+                "actual_sample_time": "3/14/2026 12:15",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv",
+                    "4": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv"
+                }
+            },
+            "5": {
+                "planned_sample_time": "3/15/2026 11:20",
+                "actual_sample_time": "3/15/2026 13:15",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv",
+                    "4": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv"
+                }
+            },
+            "6": {
+                "planned_sample_time": "3/16/2026 11:20",
+                "actual_sample_time": "3/16/2026 12:00",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv",
+                    "2": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv",
+                    "3": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv",
+                    "4": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv"
+                }
+            },
+            "7": {
+                "planned_sample_time": "3/17/2026 11:20",
+                "actual_sample_time": "3/17/2026 15:45",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "4": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv"
+                }
+            },
+            "8": {
+                "planned_sample_time": "3/18/2026 11:20",
+                "actual_sample_time": "3/18/2026 12:24",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "4": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv"
+                }
+            },
+            "9": {
+                "planned_sample_time": "3/19/2026 11:20",
+                "actual_sample_time": "3/19/2026 09:43",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "2": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "3": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "4": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv"
+                }
+            },
+            "10": {
+                "planned_sample_time": "3/20/2026 11:20",
+                "actual_sample_time": "3/20/2026 08:31",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "4": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv"
+                }
+            },
+            "11": {
+                "planned_sample_time": "3/21/2026 11:20",
+                "actual_sample_time": "3/21/2026 10:32",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "4": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv"
+                }
+            },
+            "12": {
+                "planned_sample_time": "3/22/2026 11:20",
+                "actual_sample_time": "3/22/2026 11:22",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "4": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv"
+                }
+            },
+            "13": {
+                "planned_sample_time": "3/23/2026 11:20",
+                "actual_sample_time": "3/23/2026 11:25",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "4": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv"
+                }
+            },
+            "14": {
+                "planned_sample_time": "3/27/2026 11:20",
+                "actual_sample_time": "3/27/2026 12:10",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "2": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "3": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "4": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv"
+                }
+            },
+            "15": {
+                "planned_sample_time": "3/28/2026 11:20",
+                "actual_sample_time": "3/28/2026 14:50",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-5_IV_2-15.csv",
+                    "2": "RE_1L-FLB_OV_2-5_IV_2-15.csv",
+                    "3": "RE_1L-FLB_OV_2-5_IV_2-15.csv",
+                    "4": "RE_1L-FLB_OV_2-5_IV_2-15.csv"
+                }
+            },
+            "16": {
+                "planned_sample_time": "3/29/2026 11:20",
+                "actual_sample_time": "3/29/2026 20:32",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv",
+                    "4": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv"
+                }
+            },
+            "17": {
+                "planned_sample_time": "3/30/2026 11:20",
+                "actual_sample_time": "3/30/2026 15:50",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv",
+                    "4": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv"
+                }
+            },
+            "18": {
+                "planned_sample_time": "3/31/2026 11:20",
+                "actual_sample_time": "3/31/2026 15:50",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv",
+                    "4": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv"
+                }
+            },
+            "19": {
+                "planned_sample_time": "4/1/2026 11:20",
+                "actual_sample_time": "4/1/2026 14:20",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv",
+                    "4": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv"
+                }
+            },
+            "20": {
+                "planned_sample_time": "4/3/2026 11:20",
+                "actual_sample_time": "4/3/2026 13:38",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv",
+                    "4": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv"
+                }
+            },
+            "21": {
+                "planned_sample_time": "4/6/2026 11:20",
+                "actual_sample_time": "4/6/2026 14:25",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "NONE",
+                    "3": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv",
+                    "4": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv"
+                }
+            },
+            "22": {
+                "planned_sample_time": "4/9/2026 11:20",
+                "actual_sample_time": "4/9/2026 12:20",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "2": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "3": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "4": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv"
+                }
+            },
+            "23": {
+                "planned_sample_time": "4/13/2026 11:20",
+                "actual_sample_time": "4/13/2026 15:55",
+                "lsc_vials_filenames": {
+                    "1": "NONE",
+                    "2": "RE_1L-FLB_IV_2-23.csv",
+                    "3": "RE_1L-FLB_IV_2-23.csv",
+                    "4": "RE_1L-FLB_IV_2-23.csv"
+                }
+            },
+            "24": {
+                "planned_sample_time": "4/14/2026 11:20",
+                "actual_sample_time": "4/14/2026 13:50",
+                "lsc_vials_filenames": {
+                    "1": "INIT_1L-FLB_IV_2-24_OV_2-14.csv",
+                    "2": "INIT_1L-FLB_IV_2-24_OV_2-14.csv",
+                    "3": "INIT_1L-FLB_IV_2-24_OV_2-14.csv",
+                    "4": "INIT_1L-FLB_IV_2-24_OV_2-14.csv"
+                }
+            },
+            "25": {
+                "planned_sample_time": "4/15/2026 11:20",
+                "actual_sample_time": "4/15/2026 13:55",
+                "lsc_vials_filenames": {
+                    "1": "INIT_1L-FLB_IV_2-25_OV_2-15.csv",
+                    "2": "INIT_1L-FLB_IV_2-25_OV_2-15.csv",
+                    "3": "INIT_1L-FLB_IV_2-25_OV_2-15.csv",
+                    "4": "INIT_1L-FLB_IV_2-25_OV_2-15.csv"
+                }
+            }
+        },
+        "OV": {
+            "0": {
+                "planned_sample_time": "3/10/2026 11:20",
+                "actual_sample_time": "3/10/2026 11:20",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-0_2-1_IV_2-2.csv",
+                    "2": "RE_1L-FLB_OV_2-0_2-1_IV_2-2.csv",
+                    "3": "RE_1L-FLB_OV_2-0_2-1_IV_2-2.csv",
+                    "4": "RE_1L-FLB_OV_2-0_2-1_IV_2-2.csv"
+                }
+            },
+            "1": {
+                "planned_sample_time": "3/13/2026 11:20",
+                "actual_sample_time": "3/13/2026 11:25",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-0_2-1_IV_2-2.csv",
+                    "2": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv",
+                    "3": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv",
+                    "4": "RE_1L-FLB_OV_2-1_IV_2-3_2-4.csv"
+                }
+            },
+            "2": {
+                "planned_sample_time": "3/16/2026 11:20",
+                "actual_sample_time": "3/16/2026 12:00",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv",
+                    "2": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv",
+                    "3": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv",
+                    "4": "RE_1L-FLB_IV_2-5_2-6_OV_2-2.csv"
+                }
+            },
+            "3": {
+                "planned_sample_time": "3/19/2026 11:20",
+                "actual_sample_time": "3/19/2026 10:09",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "2": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "3": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv",
+                    "4": "RE_1L-FLB_IV_2-7_THRU_2-11_OV_2-3.csv"
+                }
+            },
+            "4": {
+                "planned_sample_time": "3/27/2026 11:20",
+                "actual_sample_time": "3/27/2026 12:10",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "2": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "3": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv",
+                    "4": "RE_1L-FLB_IV_2-12_2-13_2-14_OV_2-4.csv"
+                }
+            },
+            "5": {
+                "planned_sample_time": "3/28/2026 11:20",
+                "actual_sample_time": "3/28/2026 14:50",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-5_IV_2-15.csv",
+                    "2": "RE_1L-FLB_OV_2-5_IV_2-15.csv",
+                    "3": "RE_1L-FLB_OV_2-5_IV_2-15.csv",
+                    "4": "RE_1L-FLB_OV_2-5_IV_2-15.csv"
+                }
+            },
+            "6": {
+                "planned_sample_time": "3/29/2026 11:20",
+                "actual_sample_time": "3/29/2026 20:32",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv",
+                    "2": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv",
+                    "3": "NONE",
+                    "4": "NONE"
+                }
+            },
+            "7": {
+                "planned_sample_time": "3/30/2026 11:20",
+                "actual_sample_time": "3/30/2026 15:50",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv",
+                    "2": "RE_1L-FLB_IV_2-16_2-17_OV_2-6_2-7.csv",
+                    "3": "NONE",
+                    "4": "NONE"
+                }
+            },
+            "8": {
+                "planned_sample_time": "4/1/2026 11:20",
+                "actual_sample_time": "4/1/2026 14:20",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv",
+                    "2": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv",
+                    "3": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv",
+                    "4": "RE_1L-FLB_IV_2-18_2-19_OV_2-8.csv"
+                }
+            },
+            "9": {
+                "planned_sample_time": "4/2/2026 11:20",
+                "actual_sample_time": "4/2/2026 14:45",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv",
+                    "2": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv",
+                    "3": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv",
+                    "4": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv"
+                }
+            },
+            "10": {
+                "planned_sample_time": "4/6/2026 11:20",
+                "actual_sample_time": "4/6/2026 14:25",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv",
+                    "2": "RE_1L-FLB_OV_2-9_2-10_IV_2-20_2-21.csv",
+                    "3": "NONE",
+                    "4": "NONE"
+                }
+            },
+            "11": {
+                "planned_sample_time": "4/9/2026 11:20",
+                "actual_sample_time": "4/9/2026 12:20",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "2": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "3": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "4": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv"
+                }
+            },
+            "12": {
+                "planned_sample_time": "4/10/2026 11:20",
+                "actual_sample_time": "4/10/2026 16:18",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "2": "RE_1L-FLB_IV_2-22_OV_2-11_2-12.csv",
+                    "3": "NONE",
+                    "4": "NONE"
+                }
+            },
+            "13": {
+                "planned_sample_time": "4/12/2026 11:20",
+                "actual_sample_time": "4/12/2026 22:10",
+                "lsc_vials_filenames": {
+                    "1": "RE_1L-FLB_OV_2-13.csv",
+                    "2": "RE_1L-FLB_OV_2-13.csv",
+                    "3": "NONE",
+                    "4": "NONE"
+                }
+            },
+            "14": {
+                "planned_sample_time": "4/14/2026 11:20",
+                "actual_sample_time": "4/14/2026 13:50",
+                "lsc_vials_filenames": {
+                    "1": "INIT_1L-FLB_IV_2-24_OV_2-14.csv",
+                    "2": "INIT_1L-FLB_IV_2-24_OV_2-14.csv",
+                    "3": "NONE",
+                    "4": "NONE"
+                }
+            },
+            "15": {
+                "planned_sample_time": "4/15/2026 11:20",
+                "actual_sample_time": "4/15/2026 13:55",
+                "lsc_vials_filenames": {
+                    "1": "INIT_1L-FLB_IV_2-25_OV_2-15.csv",
+                    "2": "INIT_1L-FLB_IV_2-25_OV_2-15.csv",
+                    "3": "INIT_1L-FLB_IV_2-25_OV_2-15.csv",
+                    "4": "INIT_1L-FLB_IV_2-25_OV_2-15.csv"
+                }
+            }
+        }
+    }
+}
