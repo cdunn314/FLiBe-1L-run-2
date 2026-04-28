@@ -228,44 +228,44 @@
                 {
                     "position": null,
                     "material": "Zr",
-                    "designator": "Zirconium Packet #3",
+                    "designator": "Zirconium Packet #13",
                     "irradiation_date": "11/19/2025",
-                    "number_of_foils": 4,
+                    "number_of_foils": 2,
                     "distance_to_source": {
                         "value": 5,
                         "unit": "cm"
                     },
                     "mass": {
-                        "value": 0.4498,
+                        "value": 0.2227,
                         "unit": "g"
                     },
                     "mass_err": {
-                        "value": 0.0002,
+                        "value": 0.0003,
                         "unit": "g"
                     },
                     "thickness": {
-                        "value": 0.02,
+                        "value": 0.01,
                         "unit": "inch"
                     },
                     "measurement_directory":{
                         "HPGe": [
-                            "Zr_foil3_10Mar2026/UNFILTERED",
-                            "Zr_foil3_10Mar2026_count2/UNFILTERED"
+                            "Zr_foil13_10Mar2026/UNFILTERED",
+                            "Zr_foil13_10Mar2026_count2/UNFILTERED"
                         ]
                     }
                 },
                 {
                     "position": null,
                     "material": "Zr",
-                    "designator": "Zirconium Packet #4",
+                    "designator": "Zirconium Packet #14",
                     "irradiation_date": "11/19/2025",
-                    "number_of_foils": 4,
+                    "number_of_foils": 2,
                     "distance_to_source": {
                         "value": 5,
                         "unit": "cm"
                     },
                     "mass": {
-                        "value": 0.4539,
+                        "value": 0.2230,
                         "unit": "g"
                     },
                     "mass_err": {
@@ -273,13 +273,13 @@
                         "unit": "g"
                     },
                     "thickness": {
-                        "value": 0.02,
+                        "value": 0.01,
                         "unit": "inch"
                     },
                     "measurement_directory":{
                         "HPGe": [
-                            "Zr_foil4_10Mar2026/UNFILTERED",
-                            "Zr_foil4_10Mar2026_count2/UNFILTERED"
+                            "Zr_foil14_10Mar2026/UNFILTERED",
+                            "Zr_foil14_10Mar2026_count2/UNFILTERED"
                         ]
                     }
                 }
