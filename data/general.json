@@ -221,55 +221,195 @@
         "foils": {
             "enabled": true,
             "position": "on generator, at target plane, facing top and bottom",
+            "data_directory": {"HPGe": "260310_1L_FLiBe_run2/DAQ"},
+            "data_url": null,
+            "detector_type": ["HPGe"],
             "materials": [
                 {
                     "position": null,
-                    "material": "Nb",
-                    "designator": null,
+                    "material": "Zr",
+                    "designator": "Zirconium Packet #3",
                     "irradiation_date": "11/19/2025",
-                    "number_of_foils": null,
+                    "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": null,
-                        "unit": "cm",
-                        "note": null
+                        "value": 5,
+                        "unit": "cm"
                     },
                     "mass": {
-                        "value": null,
+                        "value": 0.4498,
                         "unit": "g"
                     },
                     "mass_err": {
-                        "value": null,
+                        "value": 0.0002,
                         "unit": "g"
                     },
                     "thickness": {
-                        "value": null,
+                        "value": 0.02,
                         "unit": "inch"
+                    },
+                    "measurement_directory":{
+                        "HPGe": [
+                            "Zr_foil3_10Mar2026/UNFILTERED",
+                            "Zr_foil3_10Mar2026_count2/UNFILTERED"
+                        ]
                     }
                 },
                 {
                     "position": null,
                     "material": "Zr",
-                    "designator": null,
+                    "designator": "Zirconium Packet #4",
                     "irradiation_date": "11/19/2025",
-                    "number_of_foils": null,
+                    "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": null,
+                        "value": 5,
                         "unit": "cm"
                     },
                     "mass": {
-                        "value": null,
+                        "value": 0.4539,
                         "unit": "g"
                     },
                     "mass_err": {
-                        "value": null,
+                        "value": 0.0002,
                         "unit": "g"
                     },
                     "thickness": {
-                        "value": null,
+                        "value": 0.02,
                         "unit": "inch"
+                    },
+                    "measurement_directory":{
+                        "HPGe": [
+                            "Zr_foil4_10Mar2026/UNFILTERED",
+                            "Zr_foil4_10Mar2026_count2/UNFILTERED"
+                        ]
                     }
                 }
-            ]
+            ],
+            "background_directory": {
+                "HPGe": "bkgrd_14Mar26/UNFILTERED"
+            },
+            "check_sources": {
+                "HPGe": {
+                    "Ba133 Count 1": {
+                        "directory": "Ba133_1_uCi_Mar14_Count1/UNFILTERED",
+                        "nuclide": "Ba133",
+                        "activity": {
+                            "value": 1.0,
+                        "unit": "uCi",
+                        "date": "2014-03-15"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Ba133 Count 2": {
+                        "directory": "Ba133_1_uCi_Mar14_Count2/UNFILTERED",
+                        "nuclide": "Ba133",
+                        "activity": {
+                            "value": 1.0,
+                            "unit": "uCi",
+                            "date": "2014-03-15"
+                        },
+                        "energies": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Co60 Count 1": {
+                        "directory": "Co60_0_872_uCi_19Mar14_Count1/UNFILTERED",
+                        "nuclide": "Co60",
+                        "activity": {
+                            "value": 0.872,
+                            "unit": "uCi",
+                            "date": "2014-03-19"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Co60 Count 2": {
+                        "directory": "Co60_0_872_uCi_19Mar14_Count2/UNFILTERED",
+                        "nuclide": "Co60",
+                        "activity": {
+                            "value": 0.872,
+                            "unit": "uCi",
+                            "date": "2014-03-19"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Cs137 Count 1": {
+                        "directory": "Cs137_9_38uCi_29Sep23_Count1/UNFILTERED",
+                        "nuclide": "Cs137",
+                        "activity": {
+                            "value": 9.38,
+                            "unit": "uCi",
+                            "date": "2023-09-29"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Cs137 Count 2": {
+                        "directory": "Cs137_9_38uCi_29Sep23_Count2/UNFILTERED",
+                        "nuclide": "Cs137",
+                        "activity": {
+                            "value": 9.38,
+                            "unit": "uCi",
+                            "date": "2023-09-29"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Na22 Count 1": {
+                        "directory": "Na22_9_98uCi_29Sep23_Count1/UNFILTERED",
+                        "nuclide": "Na22",
+                        "activity": {
+                            "value": 9.98,
+                            "unit": "uCi",
+                            "date": "2023-09-29"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Na22 Count 2": {
+                        "directory": "Na22_9_98uCi_29Sep23_Count2/UNFILTERED",
+                        "nuclide": "Na22",
+                        "activity": {
+                            "value": 9.98,
+                            "unit": "uCi",
+                            "date": "2023-09-29"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    }
+                }
+            }
         },
         "diamond": {
             "enabled": false,
